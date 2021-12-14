@@ -137,4 +137,14 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 
 
 7. find process which uses port 4444
- - 
+ - I can't find port number 4444 but it's obvious the python program is what I have to kill. Is this okay??
+ - I found the way to specify the port for 'lsof'
+   `lsof -i:4444` (where the port number is 4444)
+
+8. I can't install taskset on my Mac.
+
+9. sniff "curl ipinfo.io"
+    Destination address was "34.117.59.81"
+    I did whois on the address and I found the server is owned by Google.
+
+
