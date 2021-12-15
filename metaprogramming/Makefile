@@ -6,3 +6,6 @@ paper.pdf: paper.tex plot-data.png
 # $@ : target file
 plot-%.png: %.dat plot.py
 	./plot.py -i $*.dat -o $@
+
+clean: 
+	rm plot-*.png paper.pdf
